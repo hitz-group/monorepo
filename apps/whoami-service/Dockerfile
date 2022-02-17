@@ -3,7 +3,7 @@ FROM golang:1.17-alpine as builder
 WORKDIR /app
 COPY . .
 
-RUN go build -o ./dist/api
+RUN go build -o ./dist/whoami
 
 FROM golang:1.17-alpine as runner
 
@@ -12,4 +12,4 @@ COPY --from=builder /app/dist ./
 
 EXPOSE 5000
 
-ENTRYPOINT ["/app/api"]
+ENTRYPOINT ["/app/whoami"]
