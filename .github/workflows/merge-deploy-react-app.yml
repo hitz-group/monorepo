@@ -1,4 +1,4 @@
-name: Run unit tests on main
+name: Deploy react app to surge
 
 on:
   push:
