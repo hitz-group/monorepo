@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# Jest
+.jest
+
 # misc
 .DS_Store
 *.pem
