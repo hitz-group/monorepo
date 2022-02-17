@@ -1,0 +1,7 @@
+{
+  "transform": {
+    "^.+\\.(t|j)sx?$": "@swc/jest"
+  },
+  "collectCoverage": true,
+  "coverageReporters": ["json", "lcov"]
+}

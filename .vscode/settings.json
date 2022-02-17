@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/storybook-static": true,
+    "**/.esbuild": true,
+    "**/.swc": true,
+    "**/.turbo": true,
+    "**/.cache": true,
+    "**/.mf": true,
+    "**/.oolio-mf": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+  "cSpell.words": ["Oolio"]
+}

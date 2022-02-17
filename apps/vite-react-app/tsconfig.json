@@ -1,0 +1,6 @@
+{
+  "extends": "@oolio/tsconfig/react-app.json",
+  "compilerOptions": {},
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

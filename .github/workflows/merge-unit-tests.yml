@@ -1,0 +1,27 @@
+name: Run unit tests on main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/**/*'
+      - 'packages/**/*'
+      - 'package-lock.json'
+      - 'turbo.json'
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    name: Build and test packages
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: yarn install --frozen-lock-file
+      - name: Run tests
+        run: yarn run test
+      - uses: checkity/upload@v1
+        name: Upload coverage report
+        with:
+          file-pattern: '**/lcov.info'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
