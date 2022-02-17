@@ -4,7 +4,17 @@
 
 ### Pros
 
+- Good task runner performance
+- Local and distributed build cache
+- Prune command to trim monorepo for a specific app/package (Faster CI builds)
+- Less configuration required for setup or adding new packages
+- Great developer/teams freedom
+
 ### Cons
+
+- No build in schematics support
+- Too much developer freedom
+- Prune works with yarn classic only
 
 ### Turborepo vs Nx vs Rush
 
