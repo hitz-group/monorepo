@@ -1,0 +1,33 @@
+name: Run unit tests on main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/*'
+      - 'packages/**/*'
+      - 'apps/vite-react-app/**/*'
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    name: Build and test packages
+    steps:
+      - uses: actions/checkout@v2
+      - name: Prune repo
+        run: yarn turbo prune --scope=@oolio/vite-react-app
+      - name: Install
+        run: cd out
+          yarn install --frozen-lock-file
+        env:
+          HUSKY: 0
+      - name: Build app
+        run: cd out
+          yarn build --include-dependencies --scope=@oolio/vite-react-app
+        env:
+          CI: true
+      - name: Deploy to surge
+        run: npx surge ./out/apps/vite-react-app/dist oolio-monorepo-react-app.surge.sh
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
