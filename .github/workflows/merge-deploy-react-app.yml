@@ -11,6 +11,9 @@ on:
 
 jobs:
   deployment:
+    environment:
+      name: production
+      url: https://oolio-monorepo-react-app.surge.sh
     runs-on: ubuntu-latest
     name: Build and test packages
     steps:
