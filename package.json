@@ -12,7 +12,7 @@
     "clean": "turbo run clean --parallel",
     "dev": "turbo run dev --parallel --no-cache",
     "lint": "turbo run lint",
-    "prepare": "husky install",
+    "prepare": "is-ci || husky install",
     "purge": "turbo run clean && rimraf ./**/node_modules node_modules",
     "rebuild": "rimraf ./node_modules/.cache/turbo && npm run build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
     "rimraf": "^3.0.2",

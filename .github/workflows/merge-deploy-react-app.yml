@@ -21,8 +21,6 @@ jobs:
         run: |
           cd out
           yarn install --frozen-lock-file
-        env:
-          HUSKY: 0
       - name: Build app
         run: |
           cd out
