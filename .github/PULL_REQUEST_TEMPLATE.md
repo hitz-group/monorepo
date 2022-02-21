@@ -29,7 +29,8 @@ Fixes # (issue)
 - [ ] All new and existing tests passed.
 - [ ] I have followed [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) for my PR
 - [ ] I have stated any breaking changes and caveats in the description
-- [ ] Changesets have been added
+- [ ] My change requires changesets
+- [ ] I have added changesets for my changes
 
 ## Other information & screenshots
 
