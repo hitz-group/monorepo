@@ -12,8 +12,7 @@
 
 ### Cons
 
-- No build in schematics support
-- Too much developer freedom
+- No built in schematics support
 - Prune works with yarn classic only
 
 ### Turborepo vs Nx vs Rush
