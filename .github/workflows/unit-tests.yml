@@ -1,6 +1,7 @@
-name: Run unit tests on main
+name: Build and run unit tests
 
 on:
+  pull_request:
   push:
     branches:
       - main
