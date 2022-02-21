@@ -18,3 +18,4 @@ jobs:
           # todo: experiment and set limit
           maximum_file_change: 20
           verified_commits: true
+          close: false
