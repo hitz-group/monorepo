@@ -1,18 +1,20 @@
 ---
-name: Bug Report
-about: Report a bug found in the project
+name: "\U0001F41B Bug Report"
+about: "If something isn't working as expected \U0001F914."
 title: 'Bug: '
-labels: 'bug'
+labels: 'i: bug, i: needs triage'
 assignees: ''
 ---
+
+Your issue may already be reported! Please search on the issue tracker before creating one.
 
 **Describe the bug**
 
 <!--- A clear and concise description of what the bug is.-->
 
-**To Reproduce**
+**Steps To Reproduce**
 
-<!---Steps to reproduce the behavior:-->
+<!---What did you do to break it:-->
 
 1. Go to '...'
 2. Click on '....'
@@ -23,9 +25,13 @@ assignees: ''
 
 <!---A clear and concise description of what you expected to happen.-->
 
-**Screenshots**
+**Possible Solution**
 
-<!---If applicable, add screenshots to help explain your problem.-->
+<!--- Only if you have suggestions on a fix for the bug -->
+
+**Screenshots and Additional Context**
+
+<!---Add more information, screenshots, explanatory loom videos etc here.-->
 
 **Desktop (please complete the following information):**
 
@@ -39,7 +45,3 @@ assignees: ''
 - OS: [e.g. iOS8.1]
 - Browser [e.g. stock browser, safari]
 - Version [e.g. 22]
-
-**Additional context**
-
-<!---Add more information, loom videos etc here.-->
