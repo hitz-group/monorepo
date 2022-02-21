@@ -1,5 +1,7 @@
 # Turborepo template
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhitz-group%2Fmonorepo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhitz-group%2Fmonorepo?ref=badge_shield)
+
 ## Turborepo
 
 ### Pros
@@ -61,3 +63,5 @@ yarn run purge
 # Build a single package and its dependencies
 yarn run build --no-deps --scope=@oolio/<package>
 ```
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhitz-group%2Fmonorepo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhitz-group%2Fmonorepo?ref=badge_large)
