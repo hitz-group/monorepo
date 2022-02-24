@@ -11,6 +11,10 @@
     "./jest.config": "./jest.config.json",
     "./jest.config.json": "./jest.config.json"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "git://github.com/hitz-group/monorepo.git",
   "dependencies": {
     "@swc/core": "^1.2.141",
     "@swc/jest": "^0.2.17",
