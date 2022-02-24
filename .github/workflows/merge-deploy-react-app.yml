@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Prune repo
-        run: npx turbo prune --scope=@oolio/vite-react-app
+        run: npx turbo prune --scope=@hitz-group/monorepo-vite-react-app
       - name: Install
         run: |
           cd out
@@ -27,7 +27,7 @@ jobs:
       - name: Build app
         run: |
           cd out
-          yarn build --include-dependencies --scope=@oolio/vite-react-app
+          yarn build --include-dependencies --scope=@hitz-group/monorepo-vite-react-app
         env:
           CI: true
       - name: Deploy to surge
