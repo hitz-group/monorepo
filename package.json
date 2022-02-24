@@ -16,9 +16,12 @@
     "purge": "turbo run clean && rimraf ./**/node_modules node_modules",
     "rebuild": "rimraf ./node_modules/.cache/turbo && npm run build",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "format:staged": "pretty-quick --staged"
+    "format:staged": "pretty-quick --staged",
+    "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.2",
+    "@changesets/cli": "^2.20.0",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
     "prettier": "^2.5.1",
