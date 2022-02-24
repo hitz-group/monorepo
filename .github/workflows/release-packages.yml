@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Dependencies
-        run: npm ci --no-audit
+        run: yarn install --frozen-lock-file
 
       - name: Creating .npmrc
         run: |
