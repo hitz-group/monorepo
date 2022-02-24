@@ -1,5 +1,5 @@
 {
-  "name": "@oolio/tsconfig",
+  "name": "@hitz-group/monorepo-tsconfig",
   "version": "0.0.0",
   "private": false,
   "main": "index.js",

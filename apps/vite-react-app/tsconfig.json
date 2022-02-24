@@ -1,6 +1,8 @@
 {
-  "extends": "@oolio/tsconfig/react-app.json",
-  "compilerOptions": {},
+  "extends": "@hitz-group/monorepo-tsconfig/react-app.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

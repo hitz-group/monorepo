@@ -1,5 +1,5 @@
 {
-  "name": "@oolio/vite-react-app",
+  "name": "@hitz-group/monorepo-vite-react-app",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -17,8 +17,8 @@
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
-    "@oolio/react-testing": "*",
-    "@oolio/tsconfig": "*",
+    "@hitz-group/monorepo-react-testing": "*",
+    "@hitz-group/monorepo-tsconfig": "*",
     "vite": "^2.8.0"
   }
 }

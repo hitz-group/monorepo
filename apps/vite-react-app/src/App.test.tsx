@@ -1,4 +1,4 @@
-import { render, screen } from '@oolio/react-testing/react';
+import { render, screen } from '@hitz-group/monorepo-react-testing/react';
 import React from 'react';
 import App from './App';
 

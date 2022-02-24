@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('@oolio/react-testing/jest.config'),
+  ...require('@hitz-group/monorepo-react-testing/jest.config'),
   globals: { React: require('react') },
 };

@@ -1,5 +1,5 @@
 {
-  "name": "@oolio/node-testing",
+  "name": "@hitz-group/monorepo-node-testing",
   "version": "0.0.0",
   "files": [
     "./jest.config.json",
