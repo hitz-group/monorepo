@@ -1,6 +1,7 @@
 {
   "name": "@hitz-group/monorepo-whoami",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "nodemon --exec go run . --signal SIGTERM --ext js,json,go,mod",
     "build": "go build -o ./dist/whoami",
